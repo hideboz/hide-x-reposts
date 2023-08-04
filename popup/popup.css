@@ -1,0 +1,23 @@
+body {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.display-none {
+    display: none;
+}
+
+div.big {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+div.big label {
+    font-size: 1.5em;
+}
+
+div.big input {
+    transform: scale(1.5);
+    margin: 0 0.5em 0 0.5em;
+    vertical-align: 0.2em;
+}
