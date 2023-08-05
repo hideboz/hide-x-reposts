@@ -1,6 +1,7 @@
 let onFlag = true;
-const saveKey = "onFlag";
-const matchList = ["さんがリツイートしました", "さんがリポストしました", "Retweeted", "Reposted", ];
+const SAVEKEY = "onFlag";
+const matchList = ["さんがリツイートしました", "さんが再投稿しました", "さんがリポストしました", 
+    "Retweeted", "Reposted", ];
 
 // <SPAN>タグ内が repost の識別にマッチするかどうかをチェックする関数
 // <SPAN> の親が <A> で、子の text が repost のテキストにマッチするかどうかをチェックする
@@ -70,8 +71,9 @@ function onError(error) {
 }
 
 function onGot(item) {
-    onFlag = item[saveKey]; // グローバル変数にセット
-    // console.log("onFlag: ", onFlag); // debug
+    if (SAVEKEY in item) {
+        onFlag = item[SAVEKEY]; // グローバル変数にセット
+    }
 }
 
 // https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/API/storage/sync

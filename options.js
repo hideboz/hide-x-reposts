@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", restoreOptions);
 document.getElementById("btnradio-on").addEventListener("change", changeToOn);
 document.getElementById("btnradio-off").addEventListener("change", changeToOff);
 
-document.getElementById("reload-button").addEventListener("click", reloadCurrentPage);
-
 
 // Functions =======================================================================================
 function storageValue(value) {
@@ -38,14 +36,6 @@ function buttonDisplay(displayFlag) {
         document.getElementById("reload-button-div").classList.add('display-none');
     }
 }
-
-// reload ==========================================================================================
-function reloadCurrentPage() {
-    // Reload the active tab of the current window:
-    browser.tabs.reload();
-    buttonDisplay(false);
-}
-
 
 // popup表示時に実行する関数 =======================================================================
 // restoreOptions() → storageGet() → onGot()
