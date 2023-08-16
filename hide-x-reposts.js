@@ -1,7 +1,7 @@
 let onFlag = true;
 const SAVEKEY = "onFlag";
 const matchList = ["さんがリツイートしました", "さんが再投稿しました", "さんがリポストしました", 
-    "Retweeted", "Reposted", ];
+    "Retweeted", "Reposted", "reposted", ];
 
 // <SPAN>タグ内が repost の識別にマッチするかどうかをチェックする関数
 // <SPAN> の親が <A> で、子の text が repost のテキストにマッチするかどうかをチェックする

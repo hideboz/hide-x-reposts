@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "Hide X Reposts",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Hideaki Sakai",
 
     "description": "Hides reposts on X (The SNS Formerly Known as Twitter).",
