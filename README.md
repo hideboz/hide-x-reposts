@@ -13,21 +13,21 @@ This Firefox add-on hides reposts (retweets) on 𝕏 (the SNS formerly known as 
 You can download and install this Firefox add-on from the [product page](https://addons.mozilla.org/en-US/firefox/addon/hide-x-reposts/).
 
 ## License
-This software is released under the GNU Affero General Public License, see COPYING.
+This software is released under the GNU General Public License, see COPYING.
 
-![GNU Affero General Public License](images/agplv3-with-text-100x42.png)
+![GNU General Public License](images/gplv3-with-text-136x68.png)
 
 This file is part of Hide-X-Reposts.
 
 Hide-X-Reposts is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
+it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
 Hide-X-Reposts is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
+GNU General Public License for more details.
 
-You should have received a copy of the GNU Affero General Public License
+You should have received a copy of the GNU General Public License
 along with Hide-X-Reposts.  If not, see <https://www.gnu.org/licenses/>.
