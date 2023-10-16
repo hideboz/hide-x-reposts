@@ -6,7 +6,7 @@ See the end of the file for license conditions.
 ## Summary
 Hides reposts (retweets) on X (The SNS Formerly Known as Twitter).
 
-## Summary
+## Description
 This Firefox add-on hides reposts (retweets) on 𝕏 (the SNS formerly known as Twitter). With this add-on, you can turn off reposts (retweets) on lists. Both English and Japanese are supported.
 
 ## Install
