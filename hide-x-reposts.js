@@ -18,7 +18,7 @@ along with Hide-X-Reposts.  If not, see <https://www.gnu.org/licenses/>.
 
 let onFlag = true;
 const SAVEKEY = "onFlag";
-const matchList = ["さんがリツイートしました", "さんが再投稿しました", "さんがリポストしました", 
+const matchList = ["さんがリツイートしました", "さんがリポストしました", "さんがリポスト", 
     "Retweeted", "Reposted", "reposted", ];
 
 // <SPAN>タグ内が repost の識別にマッチするかどうかをチェックする関数
@@ -40,6 +40,7 @@ function checkREPOST(elem) {
     return false;
 }
 
+// elem の配架の span を探して checkREPOST() を実行して、その結果を返す
 function checkSPAN(elem) {
     for (let child of elem.childNodes) {
         if (child.nodeType == Node.ELEMENT_NODE) {
@@ -60,6 +61,7 @@ function checkSPAN(elem) {
     return false;
 }
 
+// article ノードを探して、checkSPAN() を実行して true なら、要素を削除する
 function recursiveReplace(elem) {
     if (onFlag && (elem.nodeType == Node.ELEMENT_NODE)) {
         for (let child of elem.childNodes) {
