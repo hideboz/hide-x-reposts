@@ -1,48 +1,46 @@
 {
-
     "manifest_version": 2,
     "name": "Hide X Reposts",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "Hideaki Sakai",
-
     "description": "Hides reposts on X (The SNS Formerly Known as Twitter).",
-
     "browser_specific_settings": {
         "gecko": {
             "id": "hide-x-reposts@sakaiboz.com"
         }
-    }, 
-
+    },
     "icons": {
         "16": "icons/favicon-16x16.png",
         "32": "icons/favicon-32x32.png",
         "64": "icons/favicon-64x64.png"
     },
-
     "browser_action": {
         "browser_style": true,
         "default_icon": {
             "16": "icons/favicon-16x16.png",
             "32": "icons/favicon-32x32.png",
             "64": "icons/favicon-64x64.png"
-        }, 
-
+        },
         "default_title": "Hide X Reposts",
         "default_popup": "popup/popup.html"
     },
-
     "content_scripts": [
         {
-            "matches": ["https://*.twitter.com/*"],
-            "js": ["hide-x-reposts.js"]
+            "matches": [
+                "https://*.twitter.com/*",
+                "https://*.x.com/*"
+            ],
+            "js": [
+                "hide-x-reposts.js"
+            ]
         }
     ],
-
     "options_ui": {
         "page": "options.html",
         "browser_style": true
     },
-
-    "permissions": ["storage", "tabs"]
-
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
 }
